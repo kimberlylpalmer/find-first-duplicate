@@ -1,16 +1,105 @@
-function findFirstDuplicate(arr) {
-  // type your code here
-  const individual = new Set();
+// function findFirstDuplicate(arr) {
+//   // type your code here
+//   const individual = new Set();
 
+//   for (const value of arr) {
+//     if (individual.has(value)) {
+//       return value;
+//     }
+//     individual.add(value);
+//   }
+//   return -1;
+
+// }
+
+// const findFirstDuplicate = (arr) => {
+//   const individual = new Set();
+//   for (const value of arr) {
+//     if (individual.has(value)) {
+//       return value;
+//     }
+//     individual.add(value);
+//   }
+//   return -1;
+// }
+
+// const findFirstDuplicate = (arr) => {
+//   const uniqueValue = new Set();
+//   for (const value of arr) {
+//     if (uniqueValue.has(value)) {
+//       return value;
+//     }
+//     uniqueValue.add(value)
+//   }
+//   return -1
+// }
+
+// const findFirstDuplicate = (arr) => {
+//   const uniques = new Set();
+//   for (const value of arr) {
+//     if (uniques.has(value)) {
+//       return value;
+//     }
+//     uniques.add(value);
+//   }
+//   return -1;
+// }
+
+// function findFirstDupllicate(arr) {
+//   const uniqueValues = new Set();
+//   for (const value of arr) {
+//     if (uniqueValues.has(value)) {
+//       return value
+//     }
+//     uniqueValues.add(value)
+//   }
+//   return -1
+//   return arr
+// }
+
+// const findFirstDuplicate = (arr) => {
+//   const uniqueValues = new Set();
+//   for (const dog of arr) {
+//     if (uniqueValues.has(dog)) {
+//       return dog;
+//     }
+//     uniqueValues.add(dog);
+//   }
+//   return -1
+// }
+
+// function findFirstDuplicate(arr) {
+//   const uniques = new Set();
+//   for (const value of arr) {
+//     if (uniques.has(value)) {
+//     }
+//     uniques.add(value)
+//   }
+//   return -1
+// }
+
+// function findFirstDuplicate(arr) {
+//   const uniqueValues = new Set();
+//   for (const value of arr) {
+//     if (uniqueValues.has(value)) {
+//       return value;
+//     }
+//     uniqueValues.add(value)
+//   }
+//   return -1
+// }
+
+function findFirstDuplicate(arr) {
+  let uniqueValues = new Set();
   for (const value of arr) {
-    if (individual.has(value)) {
+    if (uniqueValues.has(value)) {
       return value;
     }
-    individual.add(value);
+    uniqueValues.add(value)
   }
-  return -1;
-
+  return -1
 }
+
 
 if (require.main === module) {
   // add your own tests in here
